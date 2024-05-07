@@ -17,10 +17,12 @@ export function UsersProvider({ children }) {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useUsers() {
-  return useContext(UserContext)
+  return useContext(UserContext);
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useUserDispatch() {
   return useContext(UserDispatchContext);
 }
@@ -89,5 +91,5 @@ function UsersReducer(allUsers, action) {
 }
 
 UsersProvider.propTypes = {
-  children: PropTypes.array
+  children: PropTypes.array,
 };
